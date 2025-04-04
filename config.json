@@ -12,12 +12,14 @@
     "singlePage":["about"],
     "commentLabelColor":"#006b75",
     "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
+    "i18n":"EN",   
+    "UTC":-8,
     "themeMode":"manual",
     "dayTheme":"light",
     "nightTheme":"dark_colorblind",
     "urlMode":"issue",
-    "style":"",
-    "script":"",
+    "style":"<style>#postBody{font-size:20px}</style>",
+    "script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>",
     "head":"",
     "allHead":"",
     "indexStyle":"",
@@ -27,5 +29,5 @@
     "bottomText":"Copyright Reserved.",
     "ogImage":"",
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
-    "needComment":1
+    "needComment":1,
 }

@@ -1,10 +1,10 @@
 {
-    "title":"Blog of LXC.ONE",
+    "title":"APP.LXC.ONE",
     "subTitle":"Record feeling, experience and etc meaningful to me",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "GMEEK_VERSION":"last",
-    "displayTitle":"App.Lxc.One",
-    "homeUrl":"http://app.lxc.one",
+    "displayTitle":"App.Lxc.One",      
+    "homeUrl":"https://app.lxc.one",
     "faviconUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "email":"admin@lxc.one",
     "startSite":"04/04/2025",
@@ -26,7 +26,7 @@
     "indexScript":"",
     "showPostSource":1,
     "rssSplit":"sentence",
-    "bottomText":"Copyright Reserved.",
+    "bottomText":"© Copyright Reserved!",  
     "ogImage":"",
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
     "needComment":1

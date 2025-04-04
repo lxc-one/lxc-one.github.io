@@ -122,4 +122,3 @@ usb_xhci:4.parent = "-1"
 
 Here it goes!
 
-![image.png](https://raw.githubusercontent.com/lxc-one/img4app/main/img/20250404173737017.png)

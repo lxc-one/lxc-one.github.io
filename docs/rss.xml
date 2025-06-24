@@ -1,5 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>AI.LXC.ONE</title><link>https://ai.lxc.one</link><description>爱AI，爱生活，拥抱科技！</description><copyright>AI.LXC.ONE</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://ai.lxc.one/favicon.png</url><title>avatar</title><link>https://ai.lxc.one</link></image><lastBuildDate>Tue, 24 Jun 2025 01:06:59 +0000</lastBuildDate><managingEditor>AI.LXC.ONE</managingEditor><ttl>60</ttl><webMaster>AI.LXC.ONE</webMaster><item><title>AI基建相关的硬件</title><link>https://ai.lxc.one/post/4.html</link><description>![Image](https://github.com/user-attachments/assets/630e1f47-6cef-439a-98f6-81b00d2d77a9)
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>AI.LXC.ONE</title><link>https://ai.lxc.one</link><description>爱AI，爱生活，拥抱科技！</description><copyright>AI.LXC.ONE</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://ai.lxc.one/favicon.png</url><title>avatar</title><link>https://ai.lxc.one</link></image><lastBuildDate>Tue, 24 Jun 2025 01:23:41 +0000</lastBuildDate><managingEditor>AI.LXC.ONE</managingEditor><ttl>60</ttl><webMaster>AI.LXC.ONE</webMaster><item><title>Marvell和Broadcom两份AI基建报告</title><link>https://ai.lxc.one/post/5.html</link><description>近日，美满公司面向投资者发布了120页的有关定制化AI的报告，相对博通公司去年3月发布的关于AI基建的报告有哪些相同和不同点呢？
+
+1. [marvell-custom-ai-investor-event-2025.pdf](https://github.com/user-attachments/files/20874267/marvell-custom-ai-investor-event-2025.pdf)
+2. [20240320 Enabling AI Infrastructure Investor Meeting.pdf](https://github.com/user-attachments/files/20874266/20240320.Enabling.AI.Infrastructure.Investor.Meeting.pdf)
+
+以下是对Marvell和Broadcom两份AI基建报告的展望部分的相同点与不同点总结：
+
+
+### **相同点总结**
+1. **市场增长预期一致**  
+    - 均认为AI基建市场将高速扩张，数据中心CAPEX持续增长。</description><guid isPermaLink="true">https://ai.lxc.one/post/5.html</guid><pubDate>Tue, 24 Jun 2025 01:23:17 +0000</pubDate></item><item><title>AI基建相关的硬件</title><link>https://ai.lxc.one/post/4.html</link><description>![Image](https://github.com/user-attachments/assets/630e1f47-6cef-439a-98f6-81b00d2d77a9)
 
 ### Key Points
 

@@ -1,6 +1,6 @@
 {
     "title":"AI.LXC.ONE",
-    "subTitle":"Love AI, Love Life, Embrace Technology!",
+    "subTitle":"爱AI，爱生活，拥抱科技！",
     "avatarUrl":"https://ai.lxc.one/favicon.png",
     "GMEEK_VERSION":"last",
     "displayTitle":"AI.Lxc.One",
@@ -13,8 +13,8 @@
     "commentLabelColor":"#006b75",
     "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
     "i18n":"EN",
-    "UTC":-8,
-    "themeMode":"manual",
+    "UTC":+8,
+    "themeMode":"manual",  
     "dayTheme":"light",
     "nightTheme":"dark_colorblind",
     "urlMode":"issue",
@@ -26,7 +26,7 @@
     "indexScript":"",
     "showPostSource":1,
     "rssSplit":"sentence",
-    "bottomText":"© Copyright Reserved!",
+    "bottomText":"© 版权所有!",
     "ogImage":"",
     "primerCSS":"<link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />",
     "needComment":1

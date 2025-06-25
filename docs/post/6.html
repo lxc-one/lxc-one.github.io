@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://ai.lxc.one/GmeekVercount.js'></script>
+    <link rel="icon" href="https://ai.lxc.one/favicon.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="博通作为行业大佬，在技术和创新方面一直领先业界。">
+<meta property="og:title" content="SUE（Scale Up Ethernet）规范更新">
+<meta property="og:description" content="博通作为行业大佬，在技术和创新方面一直领先业界。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ai.lxc.one/post/6.html">
+<meta property="og:image" content="">
+<title>SUE（Scale Up Ethernet）规范更新</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+<style>#postBody{font-size:20px}</style>
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">SUE（Scale Up Ethernet）规范更新</h1>
+<div class="title-right">
+    <a href="https://ai.lxc.one" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/lxc-one/lxc-one/issues/6" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>博通作为行业大佬，在技术和创新方面一直领先业界。近日更新了自家的SUE规范：<a href="https://github.com/user-attachments/files/20894767/Scale-Ethernet-RM102.pdf">Scale-Ethernet-RM102.pdf</a></p>
+<p><strong>如下举例了两种部署场景：</strong><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/10be59b8-537a-4a65-8c1e-0f7aa4bb605d"><img src="https://github.com/user-attachments/assets/10be59b8-537a-4a65-8c1e-0f7aa4bb605d" alt="Image" style="max-width: 100%;"></a><br>
+图 1 - 单跳交换部署示例</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/16c3cc15-fcf6-4b19-9092-5dc8b774dedc"><img src="https://github.com/user-attachments/assets/16c3cc15-fcf6-4b19-9092-5dc8b774dedc" alt="Image" style="max-width: 100%;"></a><br>
+图2 - 网状部署示例</p>
+<p><strong>SUE处理流（processing flow)</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c471a1bd-6095-40b0-8b7d-7663cf78bc1f"><img src="https://github.com/user-attachments/assets/c471a1bd-6095-40b0-8b7d-7663cf78bc1f" alt="Image" style="max-width: 100%;"></a></p>
+<h3>SUE（Scale Up Ethernet）的特点总结</h3>
+<h4>低延迟与高带宽设计</h4>
+<ul>
+<li><strong>目标场景</strong>：专为机器学习、AI推理等复杂 workloads 设计，满足 XPU（如 GPU、ML 加速器）集群扩展至机架或多机架级别的需求，提升大数据集处理、深度神经网络训练等任务的效率。</li>
+<li><strong>性能指标</strong>：端到端往返延迟（RTT）&lt;2μs，单 SUE 实例带宽达 800Gbps（可扩展至 1.6Tbps），支持 200Gbps 高速 Serdes（兼容 100G/50G）。</li>
+</ul>
+<h4>灵活的部署与端口配置</h4>
+<ul>
+<li><strong>拓扑支持</strong>：
+<ul>
+<li><strong>单跳交换部署</strong>：通过交换机实现多 XPU 连接，例如 64 个 XPU 搭配 12 台 800G 交换机，任意 XPU 对间带宽可达 9.6Tbps。</li>
+<li><strong>网格（Mesh）部署</strong>：支持 XPU 间直接连接，减少交换机依赖。</li>
+</ul>
+</li>
+<li><strong>端口配置</strong>：每个 SUE 实例可配置 1/2/4 个端口，例如 800G 实例可拆分为 2×400G 或 4×200G，适配交换机基数、冗余及故障切换需求。</li>
+</ul>
+<h4>高效的事务处理与接口设计</h4>
+<ul>
+<li><strong>事务模型</strong>：
+<ul>
+<li>支持“命令/响应”模式，透明处理 XPU 特定操作（如内存读写、原子操作），可扩展缓存一致性等服务。</li>
+<li>采用共享内存模型，1 -sided 语义（源 XPU 单方面发起命令，无需目的地确认），区别于 RoCE 等需要建立连接的协议。</li>
+</ul>
+</li>
+<li><strong>接口类型</strong>：
+<ul>
+<li><strong>XPU 管理接口</strong>：基于 AXI 目标接口，用于寄存器配置、状态查询及低速数据包收发（≤10K 包/秒）。</li>
+<li><strong>XPU 命令接口</strong>：支持 FIFO（基于信用机制）或 AXI4 接口，适配不同 XPU 架构需求。</li>
+<li><strong>以太网接口</strong>：兼容 200G/100G Serdes，支持标准以太网格式或优化的 AI 转发头（AFH Gen1/Gen2），减少网络开销。</li>
+</ul>
+</li>
+</ul>
+<h4>可靠性与流量控制机制</h4>
+<ul>
+<li><strong>无损传输</strong>：
+<ul>
+<li><strong>链路层</strong>：通过链路层重试（LLR）纠正 FEC 未处理的数据包错误，搭配优先级流控制（PFC）或信用-based 流控制（CBFC）避免拥塞丢包。</li>
+<li><strong>传输层</strong>：使用 Go-Back-N 重传机制，基于包序列号（PSN）确保数据可靠交付，支持严格有序或无序传输模式。</li>
+</ul>
+</li>
+<li><strong>网络优化</strong>：
+<ul>
+<li>虚拟通道（VC）支持最多 4 个独立流量类，避免死锁；分区字段（Partition）提供多租户隔离。</li>
+<li>支持 AFH Gen2 压缩包头（6B/12B），适配 IEEE 802.1Q 标准，减少传输开销。</li>
+</ul>
+</li>
+</ul>
+<h4>负载均衡与打包机制</h4>
+<ul>
+<li><strong>负载均衡</strong>：
+<ul>
+<li>多端口模式下支持无序负载均衡，动态分配流量至可用端口；XPU 可通过硬件或软件层实现跨 SUE 实例的负载分发。</li>
+</ul>
+</li>
+<li><strong>数据打包</strong>：
+<ul>
+<li>按目的地和 VC 分组打包，最大支持 4096 字节 PDU，优化网络传输效率，避免因打包延迟交易发送。</li>
+</ul>
+</li>
+</ul>
+<h3>相对于上一版本（RM101）的更新点</h3>
+<h4>接口增强</h4>
+<ul>
+<li><strong>新增 AXI 接口</strong>：在 XPU 与 SUE 之间引入 AXI4 主/从接口，每个 400G 以太网接口对应独立 AXI 通道（AW/W/B/AR/R），支持信用机制防止缓冲区溢出，提升数据传输的标准化与兼容性。</li>
+</ul>
+<h4>网络包头优化</h4>
+<ul>
+<li><strong>更新 AFH 格式</strong>：
+<ul>
+<li><strong>AFH Gen2</strong>：基于 IEEE 802.1Q 结构化本地地址计划，推出 6B 和 12B 压缩包头，通过映射 XPU 标识符到 MAC 地址字段，减少网络层开销，提升传输效率。</li>
+<li><strong>AFH Gen1</strong>：明确支持带 Shim 头的格式，兼容更多网络场景，增强与标准以太网交换机的互操作性。</li>
+</ul>
+</li>
+</ul>
+<h4>打包机制细化</h4>
+<ul>
+<li>补充打包流程细节：明确 SUE 按目的地队列动态打包交易，最大打包限制（如 2K 字节），且不因打包延迟单个交易发送，优化吞吐量与延迟的平衡。</li>
+</ul>
+<h4>文档修正</h4>
+<ul>
+<li>修复 RM101 中的重复图片问题，提升文档可读性（RM101 主要更新）。</li>
+</ul></div>
+<div style="font-size:small;margin-top:8px;float:right;">© 版权所有</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://ai.lxc.one">AI.LXC.ONE | 爱智汇博客</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("04/04/2025"!=""){
+    var startSite=new Date("04/04/2025");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","lxc-one/lxc-one");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script><script src='https://ai.lxc.one/articletoc.js'></script>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://ai.lxc.one/GmeekVercount.js'></script>
+    <link rel="icon" href="https://ai.lxc.one/favicon.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="### 关键要点
+
+- 研究表明，博通和英伟达的CPO解决方案在目标和应用上高度一致，均用于提升数据中心性能。">
+<meta property="og:title" content="博通和英伟达的CPO解决方案对比">
+<meta property="og:description" content="### 关键要点
+
+- 研究表明，博通和英伟达的CPO解决方案在目标和应用上高度一致，均用于提升数据中心性能。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ai.lxc.one/post/8.html">
+<meta property="og:image" content="">
+<title>博通和英伟达的CPO解决方案对比</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+<style>#postBody{font-size:20px}</style>
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">博通和英伟达的CPO解决方案对比</h1>
+<div class="title-right">
+    <a href="https://ai.lxc.one" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/lxc-one/lxc-one/issues/8" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h3>关键要点</h3>
+<ul>
+<li>研究表明，博通和英伟达的CPO解决方案在目标和应用上高度一致，均用于提升数据中心性能。</li>
+<li>证据显示，英伟达的带宽和功耗效率可能更高，但博通的解决方案已量产，技术更成熟。</li>
+<li>两者在调制器技术和市场定位上存在显著差异，存在一定争议，取决于具体需求。<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/lxc-one/img4app/main/img/20250628102155024.png"><img src="https://raw.githubusercontent.com/lxc-one/img4app/main/img/20250628102155024.png" alt="image.png" style="max-width: 100%;"></a></li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/lxc-one/img4app/main/img/20250628102226986.png"><img src="https://raw.githubusercontent.com/lxc-one/img4app/main/img/20250628102226986.png" alt="image.png" style="max-width: 100%;"></a></p>
+<h3>概述</h3>
+<p>博通和英伟达的Co-Packaged Optics（CPO，协同封装光学）解决方案旨在通过将光模块与芯片集成，提升数据中心和AI计算的带宽和能效。以下是两者的主要异同点，适合普通用户理解。</p>
+<h3>相同点</h3>
+<ul>
+<li>目标一致：两者都聚焦于解决数据中心的高带宽和低功耗需求，特别适用于AI和高性能计算。</li>
+<li>能效提升：两者均声称显著降低功耗，博通减少3倍，英伟达声称高效3.5倍。</li>
+<li>可靠性提高：两者都强调CPO技术提升网络可靠性，减少组件故障。</li>
+</ul>
+<h3>不同点</h3>
+<ul>
+<li>技术成熟度：博通的解决方案已量产，提供51.2Tb/s带宽，计划2025年升级至102.4Tbps。英伟达的解决方案尚未全面上市，Quantum-X预计今年晚些时候推出，带宽高达115.2Tbps，Spectrum-X在2026年推出，可达409.6Tbps。</li>
+<li>带宽容量：英伟达的带宽明显更高，适合大规模AI集群；博通当前带宽较低，但更适合现有数据中心。</li>
+<li>技术差异：博通使用Mach-Zehnder调制器，成熟但功耗较高；英伟达用Micro-Ring Resonator调制器，功耗低但需额外热管理。</li>
+<li>市场定位：英伟达更聚焦未来百万GPU级别的扩展，博通更适合当前需求，提供更高集成密度。</li>
+</ul>
+<p>更多细节请见下文调查报告。</p>
+<h3>调查报告：博通与英伟达CPO解决方案的全面比较</h3>
+<p>博通（Broadcom）和英伟达（NVIDIA）作为半导体行业的领导者，在Co-Packaged Optics（CPO）领域均有显著布局。CPO技术通过将光模块与芯片封装在一起，旨在解决数据中心和AI计算中的带宽瓶颈和功耗挑战。以下是基于2025年6月27日最新数据的详细分析，涵盖两者的技术实现、应用场景和市场定位。</p>
+<h3>技术实现的异同</h3>
+<p>相同点</p>
+<ul>
+<li>核心目标：两者均致力于通过CPO技术提升数据传输速度和降低能耗，特别针对数据中心和AI集群的高带宽需求。</li>
+<li>功耗效率：两者都声称其CPO解决方案相较传统插拔式光模块（pluggables）显著降低功耗。博通表示其解决方案每800Gb/s端口功耗为5.5W，较插拔式光模块减少3倍（约15W）；英伟达声称其解决方案比传统网络高效3.5倍，提供3.5倍的能效提升。</li>
+<li>可靠性提升：两者均强调CPO减少组件数量，从而提高网络可靠性。英伟达具体提到其解决方案的网络容错性提高10倍，信号可靠性提升63倍。</li>
+</ul>
+<p>不同点</p>
+<ul>
+<li>技术成熟度与上市时间：博通的Bailly CPO交换机（基于Tomahawk-5 ASIC）已于2025年初投入量产，提供51.2Tb/s带宽（64 x 800Gbps或128 x 400Gbps），并计划在2025年下半年推出102.4Tbps的下一代解决方案。相比之下，英伟达的Quantum-X（InfiniBand）预计今年晚些时候上市，提供115.2Tbps（144 x 800Gb/s或576 x 200Gbps），而Spectrum-X（Ethernet）则定于2026年推出，带宽可达409.6Tbps（512 x 800Gbps）。</li>
+<li>带宽容量：英伟达的解决方案在带宽上明显领先，Quantum-X提供115.2Tbps，Spectrum-X最高可达409.6Tbps，适合未来百万GPU级别的AI工厂。而博通当前提供51.2Tb/s，计划升级至102.4Tbps，更多满足当前800G Ethernet时代的需求。</li>
+<li>调制器技术：博通使用Mach-Zehnder Modulator（MZM），功耗范围为5-10pJ/bit，占地面积较大，但温度耐受性更好，便于与现有基础设施集成。英伟达采用Micro-Ring Resonator Modulator（MRM），功耗更低（1-2pJ/bit），支持波分复用（WDM），但对温度敏感，需要额外的加热电路。</li>
+<li>集成方式：博通的解决方案将8个6.4Tbps硅光子引擎直接集成到封装中，提供更高的“海滩密度”（beachfront density），光纤耦合为边缘耦合，当前每个引擎16对光纤，可能扩展至64对。英伟达使用可拆卸的光学服务组件（OSA），每4.8Tbps包含3个1.6Tbps引擎，光纤耦合同样为边缘耦合，Quantum-X提供324个光连接（144对光纤用于144 x 200Gbps），提升可服务性和灵活性。</li>
+<li>波分复用（WDM）：博通使用粗波分复用（Coarse WDM），每个光纤支持400G（4λ x 100G），但800Gbps端口配置尚未明确。英伟达不使用WDM，依赖更高的光纤数量，例如Quantum-X使用144对光纤支持144 x 200Gbps。</li>
+<li>冷却需求：博通的当前解决方案可能初始为空气冷却，但高密度配置可能需要液冷。英伟达明确使用液冷，尤其在GTC 2025演示中展示了其解决方案的液冷需求。</li>
+</ul>
+<h3>应用场景与市场定位</h3>
+<p>相同点</p>
+<ul>
+<li>应用领域：两者均服务于数据中心网络，特别适用于AI训练、推理和高性能计算（HPC）场景，满足大规模数据传输需求。</li>
+<li>合作伙伴生态：两者均与光模块制造商和系统集成商合作，推动CPO技术的落地。博通与Micas Networks合作，英伟达则与TSMC、Corning、Foxconn等11家合作伙伴合作。</li>
+</ul>
+<p>不同点</p>
+<ul>
+<li>市场定位：博通的CPO解决方案更聚焦于当前数据中心需求，提供更高的集成密度，适合现有800G Ethernet时代（100G SerDes），其51.2Tbps解决方案已对齐当前网络需求，2025年计划推出100Tbps。英伟达则更注重大规模AI集群的未来需求，带宽从100Tbps跃升至400Tbps（200G SerDes），支持连接超过10,000个GPU，适合百万GPU级别的AI工厂。</li>
+<li>扩展性：英伟达的解决方案通过多光子开关芯片实现更高基数（radix）交换，模块化设计（如可拆卸OSA）提升扩展性和可服务性。博通的单封装设计更紧凑，但扩展性相对较弱。</li>
+</ul>
+<h3>详细数据对比</h3>
+<p>以下表格总结了两者的关键技术参数：</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>品牌</strong></td>
+<td><strong>博通（Broadcom）</strong></td>
+<td><strong>英伟达（NVIDIA）</strong></td>
+</tr>
+<tr>
+<td><strong>产品</strong></td>
+<td>Bailly CPO交换机（Tomahawk-5 ASIC）</td>
+<td>Quantum-X（InfiniBand）和Spectrum-X（Ethernet）光子交换机</td>
+</tr>
+<tr>
+<td><strong>带宽</strong></td>
+<td>51.2Tb/s（64 x 800Gbps或128 x 400Gbps），计划2025年下半年102.4Tbps</td>
+<td>Quantum-X：115.2Tbps（144 x 800Gbps或576 x 200Gbps）；Spectrum-X：102.4Tbps或409.6Tbps</td>
+</tr>
+<tr>
+<td><strong>光学引擎</strong></td>
+<td>8个6.4Tbps硅光子引擎，直接集成</td>
+<td>多个1.6Tbps引擎，每4.8Tbps包含3个引擎，可拆卸模块</td>
+</tr>
+<tr>
+<td><strong>光纤耦合</strong></td>
+<td>边缘耦合，400G-FR4（4λ x 100G），每个引擎16对光纤，可能扩展至64对</td>
+<td>边缘耦合，Quantum-X：324个光连接（144对光纤用于144 x 200Gbps）</td>
+</tr>
+<tr>
+<td><strong>激光器集成</strong></td>
+<td>外部，16个可插拔激光器模块（每个6.4Tbps引擎2个）</td>
+<td>外部，Quantum-X：18个激光器模块（每个供应8个引擎），单位带宽激光器数量更少</td>
+</tr>
+<tr>
+<td><strong>调制器</strong></td>
+<td>Mach-Zehnder Modulator（MZM），5-10pJ/bit，温度耐受性更好</td>
+<td>Micro-Ring Resonator Modulator（MRM），1-2pJ/bit，支持WDM，温度敏感</td>
+</tr>
+<tr>
+<td><strong>WDM</strong></td>
+<td>使用粗波分复用（Coarse WDM），每个光纤400G（4λ x 100G）</td>
+<td>不使用WDM，依赖光纤数量（例如，144对光纤用于144 x 200Gbps）</td>
+</tr>
+<tr>
+<td><strong>功耗效率</strong></td>
+<td>每800Gb/s端口5.5W，6-7pJ/bit，较插拔式光模块减少3倍</td>
+<td>比插拔式光模块高效3.5倍，使用MRM和更少激光器，需液冷</td>
+</tr>
+<tr>
+<td><strong>冷却</strong></td>
+<td>可能初始为空气冷却，高密度可能需液冷</td>
+<td>明确使用液冷</td>
+</tr>
+<tr>
+<td><strong>可靠性</strong></td>
+<td>高可靠性，减少组件导致的链路抖动</td>
+<td>网络容错性提高10倍，信号可靠性提高63倍</td>
+</tr>
+<tr>
+<td><strong>部署速度</strong></td>
+<td>未明确</td>
+<td>部署速度提高1.3倍</td>
+</tr>
+<tr>
+<td><strong>合作伙伴</strong></td>
+<td>Micas Networks</td>
+<td>TSMC、Corning、Foxconn等11家合作伙伴</td>
+</tr>
+<tr>
+<td><strong>市场定位</strong></td>
+<td>当前数据中心需求，海滩密度高</td>
+<td>大规模AI集群，支持百万GPU级别扩展</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h3>争议与未来趋势</h3>
+<p>CPO技术的推广面临一定争议，例如与传统插拔式光模块的竞争。一些分析（如Yole Group报告，<a href="https://www.yolegroup.com/product/report/co-packaged-optics-for-datacenter-2023/" rel="nofollow">Co-Packaged Optics for Datacenter 2023</a>）指出，插拔式光模块在未来两代交换系统内仍具优势，CPO的全面部署可能需要更长时间。博通和英伟达的解决方案在调制器选择上也存在技术路线之争，MZM更成熟但功耗高，MRM更高效但热管理复杂。</p>
+<p>未来趋势显示，英伟达的带宽和扩展性更适合AI工厂的长期需求，而博通的解决方案可能在短期内更具实用性。两者均需克服液冷成本和生态系统兼容性挑战。</p>
+<h3>结论</h3>
+<p>综上所述，博通和英伟达的CPO解决方案在目标和能效提升上高度一致，但技术路径和市场定位存在显著差异。博通更适合当前数据中心需求，已量产且技术成熟；英伟达则更聚焦未来AI集群的扩展，带宽和功耗效率更高，但上市时间较晚。用户选择应根据具体需求（如即时部署或长期扩展）权衡。</p>
+<h3>关键引文</h3>
+<ul>
+<li><a href="https://www.broadcom.com/info/optics/cpo" rel="nofollow">Broadcom CPO最高功耗效率和带宽密度</a></li>
+<li><a href="https://semiengineering.com/new-standards-push-co-packaged-optics/" rel="nofollow">新标准推动协同封装光学</a></li>
+<li><a href="https://www.broadcom.com/products/fiber-optic-modules-components/co-packaged-optics" rel="nofollow">博通协同封装光学产品</a></li>
+<li><a href="https://www.broadcom.com/blog/how-to-scale-the-optical-interconnect-using-co-packaged-optics-cpo" rel="nofollow">如何通过CPO扩展光学互连</a></li>
+<li><a href="https://spectrum.ieee.org/co-packaged-optics" rel="nofollow">英伟达光学开关可能改变AI数据中心</a></li>
+<li><a href="https://blog.apnic.net/2025/05/07/co-packaged-optics-a-deep-dive/" rel="nofollow">协同封装光学深入探讨</a></li>
+<li><a href="https://semianalysis.com/2023/08/23/nvidias-optical-ascent-1b-revenue/" rel="nofollow">英伟达光学收入超10亿美元</a></li>
+<li><a href="https://www.nvidia.com/en-us/networking/products/silicon-photonics/" rel="nofollow">英伟达硅光子网络交换机</a></li>
+<li><a href="https://www.yolegroup.com/product/report/co-packaged-optics-for-datacenter-2023/" rel="nofollow">Yole Group半导体行业趋势</a></li>
+<li><a href="https://www.msn.com/en-us/money/technologyinvesting/broadcom-nvidia-among-those-set-to-benefit-from-co-packaged-optics-technology-j-p-morgan/ar-AA1GYAQZ" rel="nofollow">博通英伟达受益于CPO技术</a></li>
+</ul></div>
+<div style="font-size:small;margin-top:8px;float:right;">© 版权所有</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://ai.lxc.one">AI.LXC.ONE | 爱智汇博客</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("04/04/2025"!=""){
+    var startSite=new Date("04/04/2025");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","lxc-one/lxc-one");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script><script src='https://ai.lxc.one/articletoc.js'></script>
+
+</html>
